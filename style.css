@@ -130,11 +130,6 @@ header {
     color: var(--accent-blue);
 }
 
-.output {
-    color: var(--text-primary);
-    margin-left: 1rem;
-}
-
 h1 {
     font-size: 2.5rem;
     color: var(--accent-cyan);
@@ -304,7 +299,9 @@ h3::before {
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid var(--bg-tertiary);
-    transition: transform 0.3s, border-color 0.3s;
+    transition:
+        transform 0.3s,
+        border-color 0.3s;
 }
 
 .project-card:hover {
@@ -516,4 +513,12 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-cyan);
+}
+
+/* Hyperlink styles */
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
 }
